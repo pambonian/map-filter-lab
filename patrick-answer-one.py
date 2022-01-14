@@ -11,3 +11,6 @@ print("menu items", food_list)
 taxes_per_item = list(map(lambda x: x.get("price") * .15, menu))
 print('Total', taxes_per_item)
 
+check_price = list(filter(lambda x: x.get("price") < 50, menu))
+print(check_price, "check price")
+
