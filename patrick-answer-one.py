@@ -6,20 +6,24 @@ items = [
 ]
 
 
-def add_up(items):
-    receipt_obj = {}
+taxes_per_item = list(map(lambda x: x.get("price") * .15, items))
+print('Total', taxes_per_item)
 
-    for item in items:
-        name = item.get('name')
-        price = item.get('price')
-        print(name)
 
-        if (receipt_obj.get(name)):
-            receipt_obj[name] += price
+# def add_up(items):
+#     receipt_obj = {}
 
-        else:
-            receipt_obj[name] = price
+#     for item in items:
+#         name = item.get('name')
+#         price = item.get('price')
+#         print(name)
 
-    return receipt_obj
+#         if (receipt_obj.get(name)):
+#             receipt_obj[name] += price
 
-print(add_up(items))
+#         else:
+#             receipt_obj[name] = price
+
+#     return receipt_obj
+
+# print(add_up(items))
