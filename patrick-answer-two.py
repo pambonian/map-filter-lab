@@ -1,6 +1,3 @@
-from unicodedata import category
-
-
 products = [
     {
         "name": "Shampoo",
@@ -11,10 +8,13 @@ products = [
         "name": "Kleenex",
         "category": "Paper",
         "price": 8
+    },
+    {
+        "name": "Paper Plates",
+        "category": "Paper",
+        "price": 7
     }
 ]
-
-prices = [12, 13, 11, 18, 45, 65, 32]
 
 product_list = list(map(lambda x:x,products))
 
