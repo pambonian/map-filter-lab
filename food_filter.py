@@ -9,6 +9,6 @@ foods = [
 
 food_to_buy = list(map(lambda x:x,foods))
 
-fav_foods = list(map(lambda x: "chips" == x.["type"],foods))
+fav_foods = list(filter(lambda food: "chips" == food["type"],foods))
 print(food_to_buy)
 print(fav_foods)
