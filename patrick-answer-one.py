@@ -1,29 +1,13 @@
-items = [ 
-    {'name': "Shampoo", 'price': 12},
-    {'name': "Soap", 'price' : 5},
-    {'name': "Deodorant", 'price': 8},
-    {'name': "Toothpaste", 'price': 12}
+menu = [ 
+    {'name': "foie gras", 'price': 120},
+    {'name': "caesar salad", 'price' : 5},
+    {'name': "marzipan", 'price': 18},
+    {'name': "steak", 'price': 75}
 ]
 
+food_list = list(map(lambda x:x,menu))
+print("menu items", food_list)
 
-taxes_per_item = list(map(lambda x: x.get("price") * .15, items))
+taxes_per_item = list(map(lambda x: x.get("price") * .15, menu))
 print('Total', taxes_per_item)
 
-
-# def add_up(items):
-#     receipt_obj = {}
-
-#     for item in items:
-#         name = item.get('name')
-#         price = item.get('price')
-#         print(name)
-
-#         if (receipt_obj.get(name)):
-#             receipt_obj[name] += price
-
-#         else:
-#             receipt_obj[name] = price
-
-#     return receipt_obj
-
-# print(add_up(items))
